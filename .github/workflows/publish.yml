@@ -1,0 +1,11 @@
+name: Publish
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    uses: NathanVaughn/reusable-actions/.github/workflows/pypi-publish.yml@main

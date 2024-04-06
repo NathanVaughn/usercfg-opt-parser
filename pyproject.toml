@@ -1,20 +1,21 @@
 [tool.poetry]
-    name        = "TODOPROJECTNAME"
-    version     = "0.1.0"
-    description = "TODODESC"
+    name        = "usercfg-opt-parser"
+    version     = "1.0.0"
+    description = "Parse Microsoft Flight Simulator UserCfg.opt files"
     license     = "MIT"
     readme      = "README.md"
-    authors     = ["TODONAME <TODOEMAIL>"]
-    homepage    = "https://github.com/TODOREPO"
-    repository  = "https://github.com/TODOREPO.git"
-    # TODO DETERMINE
-    package-mode = false
+    authors     = ["Nathan Vaughn <nvaughn51@gmail.com>"]
+    homepage    = "https://github.com/NathanVaughn/usercfg-opt-parser"
+    repository  = "https://github.com/NathanVaughn/usercfg-opt-parser.git"
+    package-mode = true
+    packages = [{ include = "usercfgopt" }]
 
 [tool.poetry.urls]
-    Issues = "https://github.com/TODOREPO/issues"
+    Issues = "https://github.com/NathanVaughn/usercfg-opt-parser/issues"
 
 [tool.poetry.dependencies]
     python = "^3.12"
+lark = "^1.1.9"
 
 [tool.poetry.group.dev.dependencies]
     pytest     = "^8.1.1"
