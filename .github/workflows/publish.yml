@@ -8,4 +8,8 @@ on:
 
 jobs:
   publish:
+    permissions:
+      id-token: write
+      contents: write
+
     uses: NathanVaughn/reusable-actions/.github/workflows/pypi-publish.yml@main
