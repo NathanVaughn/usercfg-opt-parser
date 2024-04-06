@@ -7,9 +7,26 @@ on:
       - main
 
 jobs:
-  publish:
+  build:
     permissions:
-      id-token: write
+      actions: write
       contents: write
 
-    uses: NathanVaughn/reusable-actions/.github/workflows/pypi-publish.yml@main
+    uses: NathanVaughn/reusable-actions/.github/workflows/pypi-build.yml@main
+
+  publish:
+    needs: build
+
+    permissions:
+      id-token: write
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          path: dist/
+
+      - name: Publish package distributions to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
