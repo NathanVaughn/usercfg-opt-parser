@@ -1,21 +1,21 @@
 [tool.poetry]
-    name        = "usercfg-opt-parser"
-    version     = "1.0.0"
-    description = "Parse Microsoft Flight Simulator UserCfg.opt files"
-    license     = "MIT"
-    readme      = "README.md"
-    authors     = ["Nathan Vaughn <nvaughn51@gmail.com>"]
-    homepage    = "https://github.com/NathanVaughn/usercfg-opt-parser"
-    repository  = "https://github.com/NathanVaughn/usercfg-opt-parser.git"
+    name         = "usercfg-opt-parser"
+    version      = "1.0.0"
+    description  = "Parse Microsoft Flight Simulator UserCfg.opt files"
+    license      = "MIT"
+    readme       = "README.md"
+    authors      = ["Nathan Vaughn <nvaughn51@gmail.com>"]
+    homepage     = "https://github.com/NathanVaughn/usercfg-opt-parser"
+    repository   = "https://github.com/NathanVaughn/usercfg-opt-parser.git"
     package-mode = true
-    packages = [{ include = "usercfgopt" }]
+    packages     = [{ include = "usercfgopt" }]
 
 [tool.poetry.urls]
     Issues = "https://github.com/NathanVaughn/usercfg-opt-parser/issues"
 
 [tool.poetry.dependencies]
-    python = "^3.12"
-lark = "^1.1.9"
+    python = ">=3.9,<4.0"
+    lark   = "^1.1.9"
 
 [tool.poetry.group.dev.dependencies]
     pytest     = "^8.1.1"
