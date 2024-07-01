@@ -2,9 +2,9 @@ import datetime
 import os
 
 import pytest
-from conftest import TEST_FILES
 
 import usercfgopt
+from tests.conftest import TEST_FILES
 
 
 @pytest.mark.parametrize("filename", os.listdir(TEST_FILES))
