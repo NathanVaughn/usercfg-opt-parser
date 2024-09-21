@@ -1,6 +1,6 @@
 # UserCfg-Opt-Parser
 
-[![Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
 [![GitHub license](https://img.shields.io/github/license/NathanVaughn/usercfg-opt-parser)](https://github.com/NathanVaughn/usercfg-opt-parser/blob/main/LICENSE)
 [![PyPi versions](https://img.shields.io/pypi/pyversions/usercfg-opt-parser)](https://pypi.org/project/usercfg-opt-parser)
@@ -72,8 +72,8 @@ integers with more than 2 values.
 
 ### Why is it so slow?
 
-It's Python and it's a parser written for a single obscure file type. Just getting this
-working exhausted my motivation.
+It's Python and it's a parser written for a single obscure file type.
+Just getting this working exhausted my motivation.
 
 ### Should I use this file format?
 
