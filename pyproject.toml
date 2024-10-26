@@ -16,18 +16,13 @@
     requires-python = ">=3.10"
     dependencies = ["lark>=1.1.9"]
 
+[dependency-groups]
+    dev = ["pre-commit>=3.7.0", "pytest>=8.1.1", "pytest-cov>=5.0.0"]
+
 [project.urls]
     Homepage   = "https://github.com/NathanVaughn/usercfg-opt-parser"
     Repository = "https://github.com/NathanVaughn/usercfg-opt-parser.git"
     Issues     = "https://github.com/NathanVaughn/usercfg-opt-parser/issues"
-
-[tool.uv]
-    dev-dependencies = [
-        "pre-commit>=3.7.0",
-        "pre-commit-uv>=4.1.2",
-        "pytest>=8.1.1",
-        "pytest-cov>=5.0.0",
-    ]
 
 [tool.coverage.run]
     omit = ["tests/*"]
