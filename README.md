@@ -77,8 +77,8 @@ Just getting this working exhausted my motivation.
 
 ### Should I use this file format?
 
-Please god no. Unless you feel that YAML doesn't have enough ambiguity for your tastes,
-then I guess sure, go for it.
+Please god no. Unless you feel that YAML doesn't have enough ambiguity for
+your tastes, then I guess sure, go for it.
 
 ## Development
 
