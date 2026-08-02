@@ -97,12 +97,12 @@ def _write_value(value: Any) -> str:
 
     # this needs to come first, as a bool is technically an int
     if isinstance(value, bool):
-        raise ValueError("Unsupported type: bool")
+        raise TypeError("Unsupported type: bool")
 
     if isinstance(value, int):
         return str(value)
 
-    raise ValueError(f"Unsupported type: {type(value)}")
+    raise TypeError(f"Unsupported type: {type(value)}")
 
 
 def _write_dict(data: dict, level: int = 0) -> str:
