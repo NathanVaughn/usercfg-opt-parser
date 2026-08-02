@@ -24,7 +24,7 @@ def test_file_parser(filename: str) -> None:
 
 
 def test_fail_on_boolean() -> None:
-    with pytest.raises(ValueError):
+    with pytest.raises(TypeError):
         usercfg_opt_parser.dumps({"key": True})
 
 
@@ -34,5 +34,5 @@ def test_fail_on_string_with_quote() -> None:
 
 
 def test_fail_on_object() -> None:
-    with pytest.raises(ValueError):
-        usercfg_opt_parser.dumps({"key": datetime.datetime.now()})
+    with pytest.raises(TypeError):
+        usercfg_opt_parser.dumps({"key": datetime.datetime.now()})  # noqa: DTZ005
